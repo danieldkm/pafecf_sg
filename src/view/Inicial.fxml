@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="mainIncial" prefHeight="570.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controller.InicialController">
+   <children>
+      <ImageView fx:id="img" fitHeight="227.0" fitWidth="333.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/teste.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="pane1" layoutX="-150.0" layoutY="79.0" prefHeight="200.0" prefWidth="128.0">
+         <children>
+            <Rectangle arcHeight="15.0" arcWidth="15.0" fill="DODGERBLUE" height="200.0" opacity="0.65" stroke="TRANSPARENT" strokeType="INSIDE" width="128.0" />
+            <Button fx:id="btn1" alignment="CENTER" contentDisplay="CENTER" layoutX="70.0" layoutY="2.0" mnemonicParsing="false" onAction="#setOnActionBtn1" prefHeight="25.0" prefWidth="54.0" text="Excluir" visible="false">
+               <effect>
+                  <InnerShadow color="#cd0909" />
+               </effect>
+            </Button>
+            <Label fx:id="lbl1" layoutX="2.0" layoutY="87.0" text="Novo Jogador">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="pane2" layoutX="-150.0" layoutY="79.0" prefHeight="200.0" prefWidth="128.0">
+         <children>
+            <Rectangle fx:id="ret2" arcHeight="15.0" arcWidth="15.0" fill="DODGERBLUE" height="200.0" opacity="0.65" stroke="TRANSPARENT" strokeType="INSIDE" width="128.0" />
+            <Button fx:id="btn2" alignment="CENTER" contentDisplay="CENTER" layoutX="70.0" layoutY="2.0" mnemonicParsing="false" onAction="#setOnActionBtn2" prefHeight="25.0" prefWidth="54.0" text="Excluir" visible="false">
+               <effect>
+                  <InnerShadow color="#cd0909" />
+               </effect>
+            </Button>
+            <Label fx:id="lbl2" layoutX="2.0" layoutY="87.0" text="Novo Jogador">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="pane3" layoutX="-150.0" layoutY="79.0" prefHeight="200.0" prefWidth="128.0">
+         <children>
+            <Rectangle fx:id="ret3" arcHeight="15.0" arcWidth="15.0" fill="DODGERBLUE" height="200.0" opacity="0.65" stroke="TRANSPARENT" strokeType="OUTSIDE" width="128.0" />
+            <Button fx:id="btn3" alignment="CENTER" contentDisplay="CENTER" layoutX="70.0" layoutY="2.0" mnemonicParsing="false" onAction="#setOnActionBtn3" prefHeight="25.0" prefWidth="54.0" text="Excluir" visible="false">
+               <effect>
+                  <InnerShadow color="#cd0909" />
+               </effect>
+            </Button>
+            <Label fx:id="lbl3" layoutX="2.0" layoutY="87.0" text="Novo Jogador">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="paneNovoJogador" layoutX="42.5" layoutY="-318.0" prefHeight="298.0" prefWidth="515.0">
+         <children>
+            <Rectangle fx:id="rectNovoJogador" arcHeight="30.0" arcWidth="530.0" fill="#bad8f5" height="291.0" layoutX="5.0" layoutY="3.0" opacity="0.73" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="507.0" />
+            <Text fx:id="lblNovoJogadorTitulo" fontSmoothingType="LCD" layoutX="120.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastrar novo jogador">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="lblNovoJogadorNome" layoutX="14.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nome:">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtNovoJogadorNome" layoutX="85.0" layoutY="74.0" prefHeight="25.0" prefWidth="399.0" />
+            <Button fx:id="btnNovJogadorOK" layoutX="180.0" layoutY="173.0" mnemonicParsing="false" onAction="#setOnActionBtnNovoJogadorOK" prefHeight="75.0" prefWidth="155.0" text="OK">
+               <effect>
+                  <InnerShadow color="#3c1414" />
+               </effect>
+            </Button>
+         </children>
+      </Pane>
+      <Pane fx:id="paneMenu" layoutX="14.0" layoutY="-318.0" prefHeight="298.0" prefWidth="580.0">
+         <children>
+            <Rectangle fx:id="rectAlterarJogador" arcHeight="30.0" arcWidth="30.0" fill="#2a82d4ae" height="168.0" layoutX="14.0" layoutY="31.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="178.0">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="rectIniciar" arcHeight="30.0" arcWidth="30.0" fill="#2a82d4ae" height="168.0" layoutX="205.0" layoutY="31.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="178.0">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="rectEscolherFase" arcHeight="30.0" arcWidth="30.0" fill="#2a82d4ae" height="168.0" layoutX="395.0" layoutY="31.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="178.0">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Rectangle>
+            <Label layoutX="36.0" layoutY="104.0" rotate="-22.0" text="Alterar jogador">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="262.0" layoutY="104.0" rotate="-22.0" text="Iniciar">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="422.0" layoutY="104.0" rotate="-22.0" text="Escolher Fase">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="paneIniciar" layoutX="5.0" layoutY="-570.0" onMouseClicked="#setOnMouseClickedPaneInicial" prefHeight="560.0" prefWidth="890.0">
+         <children>
+            <ImageView fx:id="imgVECF" fitHeight="570.0" fitWidth="804.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/ECFLigado.png" />
+               </image>
+            </ImageView>
+            <TextArea fx:id="txtAreaCupom" layoutX="48.0" layoutY="106.0" prefHeight="244.0" prefWidth="259.0" wrapText="true" />
+            <Group layoutX="450.0" layoutY="369.0" />
+            <Button layoutX="33.0" layoutY="476.0" minHeight="-Infinity" minWidth="35.0" mnemonicParsing="false" prefWidth="10.0">
+               <effect>
+                  <InnerShadow />
+               </effect>
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnLigaDesliga" layoutX="33.0" layoutY="476.0" minHeight="-Infinity" minWidth="35.0" mnemonicParsing="false" onAction="#setOnActionBtnLigaDesliga" prefWidth="10.0">
+               <font>
+                  <Font size="9.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Label fx:id="lblStatus" layoutX="151.0" layoutY="369.0" prefHeight="17.0" prefWidth="166.0" />
+            <Circle fx:id="btnIntervencao" fill="DODGERBLUE" layoutX="209.0" layoutY="488.0" onMouseClicked="#setOnMouseClickedBtnIntervencao" opacity="0.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Rectangle fx:id="servidor" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="69.0" layoutX="16.0" layoutY="8.0" onMouseClicked="#setOnMouseClikedServidor" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="38.0" />
+            <Button layoutX="832.0" layoutY="538.0" mnemonicParsing="false" onAction="#setOnActionBtnRetornar" text="Retornar" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneDataHora" layoutX="370.0" layoutY="-500.0" prefHeight="480.0" prefWidth="440.0">
+         <children>
+            <HBox fx:id="hbData" alignment="CENTER" layoutX="50.0" layoutY="279.0" prefHeight="48.0" prefWidth="341.0" spacing="20.0" />
+            <Label layoutX="50.0" layoutY="262.0" text="Data" />
+            <Label layoutX="50.0" layoutY="121.0" text="Data da ECF" />
+            <HBox fx:id="hbDataECF" alignment="CENTER" layoutX="50.0" layoutY="138.0" prefHeight="48.0" prefWidth="341.0" spacing="20.0" />
+            <Button fx:id="btnDHSalvar" layoutX="101.0" layoutY="418.0" mnemonicParsing="false" onAction="#setOnActionBtnDHSalvar" prefHeight="25.0" prefWidth="259.0" text="Salvar" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneTest" layoutX="-213.0" layoutY="321.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="23.0" layoutY="92.0" text="LAmbda lambda lambda" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

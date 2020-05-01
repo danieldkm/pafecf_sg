@@ -1,0 +1,14 @@
+root{
+    -fx-background-image: url("C:/Users/npi/Documents/NetBeansProjects/SimuladorSG_PAF_ECF/src/img/teste.png");
+    -fx-background-repeat: stretch;   
+    /*-fx-background-size: 900 506;*/
+    -fx-background-position: center center;
+}
+
+.TextArea{
+    -fx-font-family: Consolas;
+    -fx-highlight-fill: #00ff00;
+    -fx-highlight-text-fill: #000000;
+    -fx-text-fill: #00ff00;
+    -fx-background-color: #000000;
+}
